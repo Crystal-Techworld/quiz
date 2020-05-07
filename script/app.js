@@ -5,6 +5,7 @@ const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
+const submit = document.getElementById("submit");
 
 
 //To test the functionality of the functions
@@ -21,25 +22,11 @@ let availableQuestions = [];
 //To set all 5 questions
 let questions = [
     {
-        question: "To get a document with a specific class from HTML usng javascript, the code to use is?",
-        choice1: "document.getElementById",
-        choice2: "document.getElementByClassName",
-        choice3: "document.getElementtByClassname",
-        answer: 2
-    }, 
-    {
         question: "Who is the current president of Nigeria?",
         choice1: "Abba Kyari",
         choice2: "Boss Mustapha",
         choice3: "Muhammadu Buhari",
         answer: 3
-    },
-    {
-        question: "What symbol is used to declare an object?",
-        choice1: "Curly brackets { }",
-        choice2: "Square brackets [ ]",
-        choice3: "parentheses ( )",
-        answer: 1
     },
     {
         question: "Who is the mentor in-charge of Javascript on HNG 7?",
@@ -90,9 +77,10 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS)
     {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign("end.html");
+       return window.location.assign("end.html");
         //This will send user to the last page when user has answered 5 questions 
     }
+
     questionCounter++;
     //This will determine the progress bar
   progressText.innerText = `Question ${questionCounter} / ${MAX_QUESTIONS}`;
@@ -136,7 +124,7 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             //getNewQuestion(); if this is included, clicking an option will move to the next question
-        }, 5000 );
+        }, 1000 );
       
     });
     
@@ -146,5 +134,5 @@ choices.forEach(choice => {
         score += num;
         scoreText.innerText = score;
     };
-
+   
     startQuiz();

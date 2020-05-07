@@ -9,43 +9,46 @@ h2{
 .text-center{
     text-align: center;
 }
-.choice-container{
+.choice-container {
+    display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
-    display: flex;
+    background-color: white;
     
     
 }
 .choice-option{
-    background-color: #ffffff;
+    background-color: #56a5eb;
     padding: 1.5rem 2.5rem;
-    color: black;
+    color: #ffffff;
     
 }
 .choice-text{
     padding: 1.5rem ;
     width: 100%;
-    background-color: #56a5eb;
+    
+}
+.correct{
+    background-color: #159234;
     color: white;
 }
+.incorrect{
+    background-color: red;
+    color: white;    
+}
+  
 .choice-container:hover{
     cursor: pointer;
     transition: transform 4ms;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
-.correct{
-    background-color: green;
-}
-.incorrect{
-    background-color: red;
-}
-  
+
   .next {
     cursor: pointer;
     background-color: #56a8ea;
-    color: white;
+    color: rgb(248, 249, 250);
     width: fit-content;
     font-size: 1.8rem;
     padding: 1.5rem;
