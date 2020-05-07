@@ -31,8 +31,8 @@ h3{
     margin-bottom: 4rem;
 }
 .container{
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 97vh;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -74,19 +74,69 @@ h3{
 }
 
 #footer{
-    justify-content: center;
-    align-items: center;
-    color: #333;
+    width: 100%;
+    color: rgb(77, 75, 75);
     padding: 1rem;
     text-align: center;
     font-size: 1.2em;
     position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin: 0 auto;
+}
+/*
+@media only screen and (max-width: 600px){
+   .container{
+       width: 97vw;
+      font-size: 1rem;
+       background-color: green;
+   }
+   
+.bar-prefix{
+    text-align: center;
+    font-size: 1.6rem;
+   
+}
+.bar-main-text{
+    text-align: center;
 }
 
-@media only screen and (min-width: 768px){
-   .container{
-       width: 100%;
-   }
+#progressBar{
+    border: 0.1rem solid #56a5eb;
+    height: 1.6rem;
+    width: 15rem;
+    
 }
+#progressBarFull{
+    height: 1.3rem;
+    background-color: #56a5eb;
+    width: 0%;  
+    
+}
+}
+@media only screen and (min-width: 600px){
+    .container{
+        width: 97vw;
+        font-size: inherit;
+        background-color: red;
+    }
+ }
+@media only screen and (min-width: 768px){
+    .container{
+        width: 97vw;
+       font-size: inherit;
+        background-color: black;
+    }
+ }
+ @media only screen and (min-width: 992px){
+    .container{
+        width: 97vw;
+       font-size: inherit;
+        background-color: #ff33ee;
+    }
+ }
+ @media only screen and (min-width: 1200px){
+    .container{
+        width: 97vw;
+       font-size: inherit;
+        background-color: yellow;
+    }
+ }*/
