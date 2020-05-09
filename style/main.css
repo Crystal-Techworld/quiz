@@ -1,5 +1,5 @@
 :root{
-    background-color: #ffffff;
+    background-color: #f8fcfc;
     font-size: 62.5%; 
 }
 *{
@@ -40,11 +40,13 @@ h3{
     justify-content: left;
     width: max-content;
     margin-bottom: 1rem;
+    
 }
 .instruction-text{
     font-size: 1.5rem;
     text-align: justify;
     margin-bottom: 4rem;
+    
 }
 
 .flex-center{
@@ -86,61 +88,3 @@ h3{
     margin: 0 auto;
     bottom: 0px;
 }
-/*
-@media only screen and (max-width: 600px){
-   .container{
-       width: 97vw;
-      font-size: 1rem;
-       background-color: green;
-   }
-   
-.bar-prefix{
-    text-align: center;
-    font-size: 1.6rem;
-   
-}
-.bar-main-text{
-    text-align: center;
-}
-
-#progressBar{
-    border: 0.1rem solid #56a5eb;
-    height: 1.6rem;
-    width: 15rem;
-    
-}
-#progressBarFull{
-    height: 1.3rem;
-    background-color: #56a5eb;
-    width: 0%;  
-    
-}
-}
-@media only screen and (min-width: 600px){
-    .container{
-        width: 97vw;
-        font-size: inherit;
-        background-color: red;
-    }
- }
-@media only screen and (min-width: 768px){
-    .container{
-        width: 97vw;
-       font-size: inherit;
-        background-color: black;
-    }
- }
- @media only screen and (min-width: 992px){
-    .container{
-        width: 97vw;
-       font-size: inherit;
-        background-color: #ff33ee;
-    }
- }
- @media only screen and (min-width: 1200px){
-    .container{
-        width: 97vw;
-       font-size: inherit;
-        background-color: yellow;
-    }
- }*/

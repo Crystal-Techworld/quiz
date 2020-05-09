@@ -1,0 +1,62 @@
+@media only screen and (max-width: 600px){
+.container{
+    height: 95vh;
+    width: 95vw;
+    font-size: 1rem;
+}
+ h1{
+     font-size: 3.4rem;
+} 
+ .bar-prefix{
+     font-size: 1.6rem; 
+}
+ #progressBar{
+     height: 1.6rem;
+     width: 15rem;
+}
+ #progressBarFull{
+     height: 1.3rem;   
+}
+ h2{
+    font-size: 3rem;
+}
+ .choice-container {
+    font-size: 1.3rem; 
+}
+.choice-option{
+    padding: 1.2rem 2.2rem;    
+}
+.choice-text{
+    padding: 1.3rem ;
+}
+.next {
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    margin-top: 1.3rem; 
+}
+  .round {
+    border-radius: 50%;
+  }
+}
+
+ @media only screen and (min-width: 600px){
+     .container{
+         width: 97vw;
+         font-size: inherit;
+         
+     }
+  }
+ @media only screen and (min-width: 768px){
+     .container{
+         width: 97vw;
+        font-size: inherit;
+         
+     }
+  }
+  @media only screen and (min-width: 992px){
+     .container{
+         width: 97vw;
+        font-size: inherit;
+         
+     }
+  }
